@@ -1,2 +1,2 @@
-# COC7thChm-helpdocchm
- coc不全书编辑教学chm版
+# COC 不全书编辑指南
+ 教新人如何编辑 COC 不全书

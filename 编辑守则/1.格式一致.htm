@@ -13,6 +13,117 @@ html,body {
 </head>
 
 <body>
-<P><STRONG><FONT color=#800000 size=5>格式一致</FONT></STRONG></P>
-<P>然后是正文</P></body>
+<P><STRONG><FONT color=#800000 size=6>格式一致</FONT></STRONG></P>
+<P>不全书所有的页面都要统一格式，这样才可以使不全书内部的元素统一，也方便后期编辑。</P>
+<P>git 
+库里模版文件夹里提供了最基础的项目文件：空白页模版.htm，请确保你一切的编辑，都是以这个模版为基础进行的。</P>
+<P>关于在 winchm 更改新建主体的模版，请查看<A 
+href="../Winchm/新建项目.htm">更改默认模版</A>  。</P>
+<P>此外其他有规定的格式，模版文件夹里也提供了对应的模版。</P>
+<H2>  文字相关</H2>
+<H3>  1.正文</H3>
+<P>  不全书的正文字体默认为：Arial, Helvetica, 
+sans-serif（中文：宋体，英文：Helvetica，无衬线）。跟此页面的正文一致。如果不一致，就说明你没有采用空白页模版。</P>
+<P>  此外不全书不采用出宋体外其他文字，原因是 chm 
+文件跟一般文档文件不一样，它文字显示这块关系到阅读者的电脑，如果用上了阅读者电脑里没有的字体，文字会出错。因此不全书里面所有的文字都采用宋体。</P>
+<P>    
+此外不全书里，不同段之间，绝大多数都用分为两个段落的形式进行换行，而不是折行。</P>
+<P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+  
+  <TR>
+    <TD>
+      <H3>两个段落</H3><FONT style="BACKGROUND-COLOR: #fffbf0" >
+<P>    
+这是两个段落</P>
+<P>    
+中间有空行</P></FONT></TD></TR></TABLE>    
+</P>
+<P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+  
+  <TR>
+    <TD>
+      <H4>折行</H4><FONT style="BACKGROUND-COLOR: #fffbf0" >
+<P>    
+这是折行<BR>    
+中间没空行</P></FONT></TD></TR></TABLE>    
+</P>
+<P>    
+但一些时候，我们会采用折行，来让一些文字更加紧凑，如：</P>
+<P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+  
+  <TR>
+    <TD>
+      <P><FONT style="BACKGROUND-COLOR: #fffbf0" ><STRONG>平均生命值：</STRONG><FONT style="BACKGROUND-COLOR: #ffffff"> <BR></FONT><STRONG 
+      >平均伤害加值（DB）：</STRONG><FONT style="BACKGROUND-COLOR: #ffffff"> <BR></FONT><STRONG 
+      >平均体格：</STRONG><FONT style="BACKGROUND-COLOR: #ffffff"> <BR></FONT><STRONG 
+      >平均魔法值：</STRONG><FONT style="BACKGROUND-COLOR: #ffffff"> <BR></FONT><STRONG 
+      >移动：</STRONG>    
+<BR></P></FONT></TD></TR></TABLE><STRONG></STRONG>    
+</P>
+<P>    
+关于必须用折行的情况，我们都在编辑守则里说明或在模版文件里提供。其余情况编者自行判断。</P>
+<P>    
+另外要注意的是，其他元素（如照片、表格）之间换行也有折行与分段两个办法。除文字之外的元素必须单独作为一段，如果使用换行的话会导致他们紧紧的靠在一起。</P>
+<P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+  
+  <TR>
+    <TD>
+      <H4>正确√：</H4>
+      <P>下面是分段</P>
+      <P>
+      <TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+      cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+        
+        <TR>
+          <TD>
+            <P><FONT style="BACKGROUND-COLOR: #fffbf0" >这是分段</P></FONT></TD></TR></TABLE>    
+      </P>
+      <P>
+      <TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+      cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+        
+        <TR>
+          <TD>
+            <P><FONT style="BACKGROUND-COLOR: #fffbf0" >这是分段</P></FONT></TD></TR></TABLE>    
+      </P>
+      <H4>
+      错误×：</H4>
+      <P>
+      下面是折行<BR>
+      <TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+      cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+        
+        <TR>
+          <TD>
+            <P><FONT style="BACKGROUND-COLOR: #fffbf0" >这是折行<BR 
+        ></P></FONT></TD></TR></TABLE>
+      <TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+      cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+        
+        <TR>
+          <TD>
+            <P><FONT style="BACKGROUND-COLOR: #fffbf0" >这是折行</P></FONT></TD></TR></TABLE>   
+<BR></P></FONT></TD></TR></TABLE></P>
+<H3>    
+2.引言</H3>
+<P>    
+引言全部采用斜体。引言用折行来换行：</P>
+<P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 
+cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1>
+  
+  <TR>
+    <TD>
+      <P><FONT style="BACKGROUND-COLOR: #fffbf0" ><EM>人类的思维无法将所有事物联系在一起，我想，这便是世上最大的仁慈了。我们生活在一片名为无知的平静小岛上，困于浩渺无垠的幽暗海洋，却并非要向彼方远航。科学的各个分支在各自的领域不断延伸，虽迄今为止并未伤害到我们，但终有一日，各个领域的知识将拼凑在一起，展现出骇人的现实图景，指明我们在其中的可怖位置。在这启示之中，我们只能陷入疯狂，或是逃离这致命的光明，进入黑暗纪元，祈求和平与安宁。<BR 
+      >——H.P. 
+洛夫克拉夫特《克苏鲁的呼唤》</EM></P></FONT></TD></TR></TABLE>    
+</P></body>
 </html>

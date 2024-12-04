@@ -16,7 +16,7 @@ html,body {
 <P><STRONG><FONT color=#800000 size=6>最最基础且用得到的 html 知识</FONT></STRONG></P>
 <P>打开用 VScode 打开空白页模版，可以看到一下内容，其他不用管，我们只用编辑&lt;boby&gt;&lt;/body&gt;之间红框内的内容，其他地方除非你最好不要动。</P>
 <P><IMG border=1 alt="" src="images/3/22.png" width="70%" ></P>
-<P>html 语言都是&lt;标签&gt;内容&lt;/标签&gt;这种格式，其中内容记录这段显示的文本，而标签记录着文本的属性。&lt;标签&gt;为开始标签，&lt;/标签&gt;为结束标签，而&lt;标签&gt;加上&lt;/标签&gt;，被称为 html 元素。</P>
+<P>html 语言绝大部分都是&lt;标签&gt;内容&lt;/标签&gt;这种格式，其中内容记录这段显示的文本，而标签记录着文本的属性。&lt;标签&gt;为开始标签，&lt;/标签&gt;为结束标签，而&lt;标签&gt;内容&lt;/标签&gt;，被称为 html 元素。</P>
 <H3>最基础的标签</H3>
 <P>下面书签代表文章里最基础的两个属性：标题与段落，以下元素可以独立出现在文本里，且不建议混用于同一段文字里：</P>
 <P>&lt;P&gt;默认的一段字段&lt;/P&gt;</P>
@@ -34,7 +34,7 @@ html,body {
 <P>&lt;P&gt;内容&lt;/P&gt;</P>
 <P>错误例：</P>
 <P>&lt;H3&gt;&lt;P&gt;标题&lt;/P&gt;&lt;/H3&gt;</P>
-<P>&lt;P&gt;内容&lt;/P&gt;<P></TD></TR></TABLE></P>
+<P>&lt;P&gt;内容&lt;/P&gt;<P></P></TD></TR></TABLE></P>
 <H3>属性标签</H3>
 <P>下面书签是给文字附加元素的，元素不能单独使用，必须配合上面的基础标签使用。</P>
 <P><B>粗体：&lt;B&gt;加粗文本&lt;/B&gt;</B> 或<STRONG>&lt;STRONG&gt;加粗文本</STRONG><STRONG>&lt;/STRONG&gt;</STRONG></P>
@@ -55,7 +55,7 @@ html,body {
 <P>祝各位<B>天天大成功</B>！远离<I>大失败</I>，且<B><I>团永不被咕</I></B><sup>什么可能</sup>，少遇刁民！</P></TD></TR></TABLE></P>
 <P>如上图所示，开始标签与结束标签成对出现，否则会出现不好的后果。</P>
 <P>&lt;P&gt;比如<B>&lt;B&gt;如果前面的加粗文本标签没配合结束标签的话。</P>
-<P>会导致&lt;B&gt;<B>标签后的全部都被一起加粗了，前面的其他标签也是如此，因此必须在文本加粗结束的地方，加上&lt;/B&gt;</B>标签。并且前面出现了多少个没结束的加粗标签就要加多少个</B>&lt;/B&gt;标签，因为一个&lt;/B&gt;标签只对应一个加粗标签。&lt;/P&gt;</P>
+<P>会导致&lt;B&gt;<B>标签后的全部都被一起加粗了，前面的其他标签也是如此，因此必须在文本加粗结束的地方，加上&lt;/B&gt;</B>标签。并且前面出现了多少个没结束的加粗标签就要加多少个</B>&lt;/B&gt;标签，因为一个&lt;/B&gt;标签只能结束一个加粗标签。&lt;/P&gt;</P>
 <H3>html 空元素</H3>
 <P>上面的 html 元素都直接作用于文字，必须开始标签与结束标签同时出现，否则会带来不好的后果，不过也有一些标签不直接作用于文字上，且就发生在那一处地方，那么它就不用结束。不全书用到的空元素如下：
 <BR>&lt;BR&gt;</P>
@@ -84,8 +84,10 @@ html,body {
 <TD width="50%">
 <h4>无序列表&lt;UL&gt;</h4>
 <UL>
-<LI>&lt;LI&gt;列表项&lt;/LI&gt;</LI>
-<LI>&lt;LI&gt;列表项&lt;/LI&gt;</LI>
+<LI>&lt;LI&gt;列表项&lt;/LI&gt; 
+        
+<LI>&lt;LI&gt;列表项&lt;/LI&gt; 
+        
 <LI>&lt;LI&gt;列表项&lt;/LI&gt;&lt;/UL&gt;</LI></UL></TD></FONT>
 <TD width="50%">
 <h4>有序列表&lt;OL&gt;</h4>
@@ -113,7 +115,7 @@ html,body {
 <TD>&lt;TR&gt;&lt;&lt;TD&gt;单元格4&lt;/TD&gt;</TD>
 <TD>&lt;TD&gt;单元格5&lt;/TD&gt;</TD>
 <TD>&lt;TD&gt;单元格6&lt;/TD&gt;&lt;/TH&gt;&lt;/TABLE&gt;&lt;/P&gt;</TD></TR></TABLE></P>
-<P>其中&lt;TABLE&gt;表格&lt;/TABLE&gt;代表这块是一个表格，&lt;TR&gt;一行&lt;/TR&gt;代表表格的一行，而&lt;TD&gt;单元格&lt;/TD&gt;代表表格中的一格，而&lt;TH&gt;表头&lt;/TH&gt;相当于文本加粗且一定位于正中央的单元格。</P>
+<P>其中&lt;TABLE&gt;表格&lt;/TABLE&gt;代表这块是一个表格，&lt;TR&gt;一行&lt;/TR&gt;代表表格的一行，而&lt;TD&gt;单元格&lt;/TD&gt;代表表格中的一格，而&lt;TH&gt;表头&lt;/TH&gt;相当于文本加粗且文本默认位于正中央的单元格。</P>
 <P>不过单单一个&lt;TABLE&gt;是不够实现我们需求的表格，因此我们一般会在&lt;TABLE&gt;里加上别的属性，来实现更多样的表格，以下是常用的&lt;TABLE&gt;：</P>
 <P><STRONG>黑框，单元格默认背景为#fffbf0（肤色）：</STRONG></P>
 <P>&lt;P&gt;
@@ -139,7 +141,7 @@ html,body {
 <BR>&lt;TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" borderColor=#000000 cellSpacing=0 cellPadding=2 width="100%" bgColor=#fffbf0 border=1&gt;&nbsp; 
 <BR>&lt;TR&gt;&lt;TD&gt;
 <BR>&lt;P&gt;文本内容&lt;/P&gt;
-<BR>&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;/P&gt;<P></TD></TR></TABLE></P>
+<BR>&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;/P&gt;<P></P></TD></TR></TABLE></P>
 <P><STRONG>属性表用到的：</STRONG></P>
 <P>&lt;P&gt;
 <BR>&lt;TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse;text-align: center" borderColor=#000000 cellSpacing=0 cellPadding=2 width="100%" bgColor=#ffffff border=1&gt;</P>
@@ -193,7 +195,7 @@ html,body {
 <P>bgColor=（颜色值）：背景颜色。</P>
 <P>borderColor=（颜色值）：边框颜色。</P>
 <P>border=（数字）：边框，单位默认是像素。</P>
-<P>colspan="（数字）"：跨几格，用于表格。 例如&lt;TD colspan=  "2"&gt;就是该单元格跨两格。</P>
+<P>colspan="（数字）"：跨几格，用于表格。 例如&lt;TD colspan=                    "2"&gt;就是该单元格跨两格。</P>
 <P>rowspan="（数字）"跨几列，用于表格。例如&lt;TD rowspan="2"&gt;就是该单元格跨两列。</P>
 <P>以上就是编辑不全书时需要掌握的属性，html还有其他属性，但并不需要你掌握。</P>
 <P>
